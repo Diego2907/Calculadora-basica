@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>CALCULADORA SENCILLA</title>
+</head>
+<body>
+
+    <form id="calculadora">
+        <label for="Numero 1">Numero 1</label>
+        <input class="valores" id ="valor1" name="Numero 1" type="text" autofocus placeholder="Escribe el numero">
+        <label for="Numero 2">Numero 2</label>
+        <input class="valores" id ="valor2" name="Numero 1" type="text" placeholder="Escribe el numero">
+        <button class="operacion" id="limpiador">BORRAR</button>
+        <br>
+        <br>
+
+        <button class="operacion" type= "button" onclick="suma();">Suma</button>
+        <button class="operacion" type= "button" onclick="resta()">Resta</button>
+        
+        <br>
+
+        <button class="operacion" type= "button" onclick="multiplicacion()">Multiplicacion</button>
+        <button class="operacion" type= "button" onclick="division()">Division</button>
+        <br>
+        <p>El resultado es:    <span id="resultado"></span></p>
+    </form>
+
+    <script src="main.js"></script>
+</body>
+</html>
